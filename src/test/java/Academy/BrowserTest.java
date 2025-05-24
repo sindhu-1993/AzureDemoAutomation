@@ -17,7 +17,7 @@ public class BrowserTest {
         System.out.println("Hello Guys");
         WebDriverManager.chromedriver().setup(); // Use WebDriverManager to set up ChromeDriver
         WebDriver driver = new ChromeDriver();
-        driver.get("https://rahylshettyacademy.azurewebsites.net/webapp/");
+        driver.get("http://localhost:8080/webapp/");
         String text = driver.findElement(By.cssSelector("h1")).getText();
         System.out.println(text);
         Assert.assertTrue(text.equalsIgnoreCase("RahulShettyAcademy.com Learning"));
